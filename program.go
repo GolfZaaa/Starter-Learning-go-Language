@@ -78,6 +78,7 @@ import "fmt"
 // 	fmt.Println("คะแนนสอบ + (จิตพิสัย)", score+10)
 // }
 
+// if...else if...else
 // 100 => >50 สอบผ่าน <50 ไม่ผ่าน
 // func main () {
 // 	var score int
@@ -86,12 +87,10 @@ import "fmt"
 // 	fmt.Println("คะแนนสอบ + (จิตพิสัย)", score)
 
 // 	//ประมวลผล
-
 // 	if score >= 50 {
 // 		fmt.Println("สอบผ่าน")
 // 	}else{
 // 		fmt.Println("สอบไม่ผ่าน")
-
 // 	}
 // }
 
@@ -108,17 +107,34 @@ import "fmt"
 // }
 
 //ลองทำโจทย์ปัญหา
+// func main() {
+// 	var number int
+// 	fmt.Print("กรุณาป้อนหมายเลข 1กับ2 \n 1.เปิดบัญชีธนาคาร \n 2.ถอน-ฝากเงิน \n ถ้าเป็นตัวเลขอื่นจะ ข้อมูลไม่ถูกต้อง \n")
+// 	fmt.Print("กรุณาป้อนหมายเลข = ")
+// 	fmt.Scanf("%d", &number)
+// 	if number == 1 {
+// 		fmt.Print("เปิดบัญชีธนาคาร")
+// 	} else if number == 2 {
+// 		fmt.Print("ถอน-ฝากเงิน")
+// 	} else {
+// 		fmt.Print("ข้อมูลไม่ถูกต้อง")
+// 	}
+// }
 
+// Switch...Case
 func main() {
 	var number int
 	fmt.Print("กรุณาป้อนหมายเลข 1กับ2 \n 1.เปิดบัญชีธนาคาร \n 2.ถอน-ฝากเงิน \n ถ้าเป็นตัวเลขอื่นจะ ข้อมูลไม่ถูกต้อง \n")
 	fmt.Print("กรุณาป้อนหมายเลข = ")
 	fmt.Scanf("%d", &number)
-	if number == 1 {
-		fmt.Print("เปิดบัญชีธนาคาร")
-	} else if number == 2 {
-		fmt.Print("ถอน-ฝากเงิน")
-	} else {
-		fmt.Print("ข้อมูลไม่ถูกต้อง")
+
+	switch number {
+	case 1:
+		fmt.Println("เปิดบัญชีธนาคาร")
+	case 2:
+		fmt.Println("ถอน-ฝากเงิน")
+	default:
+		fmt.Println("ข้อมูลไม่ถูกต้อง")
 	}
+
 }
