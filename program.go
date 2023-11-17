@@ -46,14 +46,34 @@ import "fmt"
 // }
 
 // ตัวดำเนินการเปรี่ยบเทียบ
+// func main() {
+// 	number1, number2 := 10, 3
+// 	fmt.Println("เท่ากันหรือไม่ = ", number1 == number2)
+// 	fmt.Println("ไม่เท่ากันหรือไม่ =", number1 != number2)
+// 	fmt.Println(number1, " มีค่ามากกว่า ", number2, "=", number1 > number2)
+// 	fmt.Println(number1, " มีค่าน้อยกว่า ", number2, "=", number1 < number2)
+// 	fmt.Println(number1, " มีค่ามากกว่าหรือเท่ากับ ", number2, "=", number1 >= number2)
+// 	fmt.Println(number1, " มีค่าน้อยกว่าหรือเท่ากับ ", number2, "=", number1 <= number2)
+// }
+
+// scanf การป้อนค่า
+// %s คือการป้อนค่าแบบตัวอักษร string
+// %d คือการป้อนค่าแบบจำนวนเต็ม int
+// %f คือการป้อนค่าแบบจำนวนมีเศษ float
 func main() {
-	number1, number2 := 10, 3
+	// // var name string
+	// // fmt.Print("กรุณาป้อนชื่อนักเรียน = ")
+	// // fmt.Scanf("%s", &name)
 
-	fmt.Println("เท่ากันหรือไม่ = ", number1 == number2)
-	fmt.Println("ไม่เท่ากันหรือไม่ =", number1 != number2)
-	fmt.Println(number1, " มีค่ามากกว่า ", number2, "=", number1 > number2)
-	fmt.Println(number1, " มีค่าน้อยกว่า ", number2, "=", number1 < number2)
-	fmt.Println(number1, " มีค่ามากกว่าหรือเท่ากับ ", number2, "=", number1 >= number2)
-	fmt.Println(number1, " มีค่าน้อยกว่าหรือเท่ากับ ", number2, "=", number1 <= number2)
+	// // fmt.Println("สวัสดี", name)
 
+	// // var score int
+	// // fmt.Print("กรุณาป้อนคะแนนนักเรียน = ")
+	// // fmt.Scanf("%d", &score)
+	// // fmt.Println("คะแนนสอบ + (จิตพิสัย)", score+10)
+
+	var score float64
+	fmt.Print("กรุณาป้อนคะแนนนักเรียน = ")
+	fmt.Scanf("%f", &score)
+	fmt.Println("คะแนนสอบ + (จิตพิสัย)", score+10)
 }
