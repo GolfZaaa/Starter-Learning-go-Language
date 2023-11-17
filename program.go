@@ -60,20 +60,65 @@ import "fmt"
 // %s คือการป้อนค่าแบบตัวอักษร string
 // %d คือการป้อนค่าแบบจำนวนเต็ม int
 // %f คือการป้อนค่าแบบจำนวนมีเศษ float
+// func main() {
+// // var name string
+// // fmt.Print("กรุณาป้อนชื่อนักเรียน = ")
+// // fmt.Scanf("%s", &name)
+
+// // fmt.Println("สวัสดี", name)
+
+// // var score int
+// // fmt.Print("กรุณาป้อนคะแนนนักเรียน = ")
+// // fmt.Scanf("%d", &score)
+// // fmt.Println("คะแนนสอบ + (จิตพิสัย)", score+10)
+
+// 	var score float64
+// 	fmt.Print("กรุณาป้อนคะแนนนักเรียน = ")
+// 	fmt.Scanf("%f", &score)
+// 	fmt.Println("คะแนนสอบ + (จิตพิสัย)", score+10)
+// }
+
+// 100 => >50 สอบผ่าน <50 ไม่ผ่าน
+// func main () {
+// 	var score int
+// 	fmt.Print("กรุณาป้อนคะแนนนักเรียน = ")
+// 	fmt.Scanf("%d", &score)
+// 	fmt.Println("คะแนนสอบ + (จิตพิสัย)", score)
+
+// 	//ประมวลผล
+
+// 	if score >= 50 {
+// 		fmt.Println("สอบผ่าน")
+// 	}else{
+// 		fmt.Println("สอบไม่ผ่าน")
+
+// 	}
+// }
+
+// func main() {
+// 	var number int
+// 	fmt.Print("กรุณาป้อนตัวเลข = ")
+// 	fmt.Scanf("%d", &number)
+
+// 	if number%2 == 0 {
+// 		fmt.Println("เลขคู่")
+// 	} else {
+// 		fmt.Println("เลขคี้")
+// 	}
+// }
+
+//ลองทำโจทย์ปัญหา
+
 func main() {
-	// // var name string
-	// // fmt.Print("กรุณาป้อนชื่อนักเรียน = ")
-	// // fmt.Scanf("%s", &name)
-
-	// // fmt.Println("สวัสดี", name)
-
-	// // var score int
-	// // fmt.Print("กรุณาป้อนคะแนนนักเรียน = ")
-	// // fmt.Scanf("%d", &score)
-	// // fmt.Println("คะแนนสอบ + (จิตพิสัย)", score+10)
-
-	var score float64
-	fmt.Print("กรุณาป้อนคะแนนนักเรียน = ")
-	fmt.Scanf("%f", &score)
-	fmt.Println("คะแนนสอบ + (จิตพิสัย)", score+10)
+	var number int
+	fmt.Print("กรุณาป้อนหมายเลข 1กับ2 \n 1.เปิดบัญชีธนาคาร \n 2.ถอน-ฝากเงิน \n ถ้าเป็นตัวเลขอื่นจะ ข้อมูลไม่ถูกต้อง \n")
+	fmt.Print("กรุณาป้อนหมายเลข = ")
+	fmt.Scanf("%d", &number)
+	if number == 1 {
+		fmt.Print("เปิดบัญชีธนาคาร")
+	} else if number == 2 {
+		fmt.Print("ถอน-ฝากเงิน")
+	} else {
+		fmt.Print("ข้อมูลไม่ถูกต้อง")
+	}
 }
