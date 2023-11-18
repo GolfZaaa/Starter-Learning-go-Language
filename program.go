@@ -122,19 +122,34 @@ import "fmt"
 // }
 
 // Switch...Case
+// func main() {
+// 	var number int
+// 	fmt.Print("กรุณาป้อนหมายเลข 1กับ2 \n 1.เปิดบัญชีธนาคาร \n 2.ถอน-ฝากเงิน \n ถ้าเป็นตัวเลขอื่นจะ ข้อมูลไม่ถูกต้อง \n")
+// 	fmt.Print("กรุณาป้อนหมายเลข = ")
+// 	fmt.Scanf("%d", &number)
+// 	switch number {
+// 	case 1:
+// 		fmt.Println("เปิดบัญชีธนาคาร")
+// 	case 2:
+// 		fmt.Println("ถอน-ฝากเงิน")
+// 	default:
+// 		fmt.Println("ข้อมูลไม่ถูกต้อง")
+// 	}
+// }
+
+// Array
 func main() {
-	var number int
-	fmt.Print("กรุณาป้อนหมายเลข 1กับ2 \n 1.เปิดบัญชีธนาคาร \n 2.ถอน-ฝากเงิน \n ถ้าเป็นตัวเลขอื่นจะ ข้อมูลไม่ถูกต้อง \n")
-	fmt.Print("กรุณาป้อนหมายเลข = ")
-	fmt.Scanf("%d", &number)
+	// number1 := 100
+	// number2 := 200
+	// number3 := 300
 
-	switch number {
-	case 1:
-		fmt.Println("เปิดบัญชีธนาคาร")
-	case 2:
-		fmt.Println("ถอน-ฝากเงิน")
-	default:
-		fmt.Println("ข้อมูลไม่ถูกต้อง")
-	}
+	//สร้าง Array แบบกำหนดจำนวน
+	// var numbers [3]int = [3]int{100, 200, 300} // 0 = 100 ,1 = 200 ,2 = 300
+	// show := len(numbers)
+	// fmt.Println("Show Array =", show)
 
+	//สร้าง Array แบบไม่กำหนดจำนวน
+	numbers := [...]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	show := len(numbers)
+	fmt.Println("Show Array ... =", show)
 }
