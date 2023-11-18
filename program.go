@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // นิยามตัวแปร
 // func main() {
@@ -138,18 +140,28 @@ import "fmt"
 // }
 
 // Array
+// func main() {
+// 	// number1 := 100
+// 	// number2 := 200
+// 	// number3 := 300
+
+// 	//สร้าง Array แบบกำหนดจำนวน
+// 	// var numbers [3]int = [3]int{100, 200, 300} // 0 = 100 ,1 = 200 ,2 = 300
+// 	// show := len(numbers)
+// 	// fmt.Println("Show Array =", show)
+
+// 	//สร้าง Array แบบไม่กำหนดจำนวน
+// 	numbers := [...]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+// 	show := len(numbers)
+// 	fmt.Println("Show Array ... =", show)
+// }
+
+// Slice
 func main() {
-	// number1 := 100
-	// number2 := 200
-	// number3 := 300
-
-	//สร้าง Array แบบกำหนดจำนวน
-	// var numbers [3]int = [3]int{100, 200, 300} // 0 = 100 ,1 = 200 ,2 = 300
-	// show := len(numbers)
-	// fmt.Println("Show Array =", show)
-
-	//สร้าง Array แบบไม่กำหนดจำนวน
-	numbers := [...]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-	show := len(numbers)
-	fmt.Println("Show Array ... =", show)
+	numbers := []int{100, 200, 300} //มีค่าเริ่มต้น
+	numbers = append(numbers, 400)
+	numbers = append(numbers, 500)
+	fmt.Println(numbers)
+	fmt.Println(numbers[1:])       // คือเอาตั้งแต่ตำแหน่งที่ 1 ของ Array ถึง สุดท้าย 1-4
+	fmt.Println("EE", numbers[:3]) // คือเอาตั้งแต่ตำแหน่งที่ 0 - 3
 }
