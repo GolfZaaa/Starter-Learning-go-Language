@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // นิยามตัวแปร
 // func main() {
@@ -185,12 +187,51 @@ import "fmt"
 // }
 
 // for...loop
+// func main() {
+// 	// for i := 1; i <= 3; i++ {
+// 	// 	fmt.Println("ดีครับ", i)
+// 	// }
+
+// 	for i := 10; i >= 0; i-- {
+// 		fmt.Println(i)
+// 	}
+// }
+
+//Break & Continue
+
+// func main() {
+// 	for i := 1; i <= 10; i++ {
+// 		if i == 5 {
+// 			continue
+// 		}
+// 		fmt.Println(i)
+// 	}
+// 	fmt.Println("จบโปรแกรม")
+// }
+
 func main() {
-	// for i := 1; i <= 3; i++ {
-	// 	fmt.Println("ดีครับ", i)
+	// number := []int{10, 20, 30, 40, 50, 60, 70, 80, 90, 100}
+	// for i := 0; i < len(number); i++ {
+	// 	fmt.Println("Index = ", i, "Value = ", number[i])
 	// }
 
-	for i := 10; i >= 0; i-- {
-		fmt.Println(i)
+	// for index, value := range number {
+	// 	fmt.Println("Index = ", index, "Value = ", value)
+	// }
+
+	//กรณีไม่เอา index
+	// for _, value := range number {
+	// 	fmt.Println("Value = ", value)
+	// }
+
+	language := map[string]string{"TH": "Thailand", "EN": "English","JP":"Japanese"}
+	// for key, value := range language {
+	// 	fmt.Println("Key = ", key, "Value = ", value)
+	// }
+
+	//กรณีไม่เอา Key ให้ใส่ _
+	for _, value := range language {
+		fmt.Println("Value = ", value)
 	}
+
 }
