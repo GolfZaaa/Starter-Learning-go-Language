@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 // นิยามตัวแปร
 // func main() {
@@ -167,21 +165,32 @@ import (
 // }
 
 // map
+// func main() {
+// 	// แบบรวดรัด
+// 	// country := map[string]string{"TH": "Thailand", "JP": "Japan"}
+
+// 	// แบบไม่รวดรัด
+// 	country := map[string]string{}
+// 	country["TH"] = "ไทย"
+// 	country["JP"] = "ญี่ปุ่น"
+
+// 	value, check := country["JP"]
+
+// 	if check {
+// 		fmt.Println(value)
+// 	} else {
+// 		fmt.Print("ไม่พบข้อมูล")
+// 	}
+// 	// fmt.Println(country["JP"])
+// }
+
+// for...loop
 func main() {
-	// แบบรวดรัด
-	// country := map[string]string{"TH": "Thailand", "JP": "Japan"}
+	// for i := 1; i <= 3; i++ {
+	// 	fmt.Println("ดีครับ", i)
+	// }
 
-	// แบบไม่รวดรัด
-	country := map[string]string{}
-	country["TH"] = "ไทย"
-	country["JP"] = "ญี่ปุ่น"
-
-	value, check := country["JP"]
-
-	if check {
-		fmt.Println(value)
-	} else {
-		fmt.Print("ไม่พบข้อมูล")
+	for i := 10; i >= 0; i-- {
+		fmt.Println(i)
 	}
-	// fmt.Println(country["JP"])
 }
