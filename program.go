@@ -157,11 +157,31 @@ import (
 // }
 
 // Slice
+// func main() {
+// 	numbers := []int{100, 200, 300} //มีค่าเริ่มต้น
+// 	numbers = append(numbers, 400)
+// 	numbers = append(numbers, 500)
+// 	fmt.Println(numbers)
+// 	fmt.Println(numbers[1:])       // คือเอาตั้งแต่ตำแหน่งที่ 1 ของ Array ถึง สุดท้าย 1-4
+// 	fmt.Println("EE", numbers[:3]) // คือเอาตั้งแต่ตำแหน่งที่ 0 - 3
+// }
+
+// map
 func main() {
-	numbers := []int{100, 200, 300} //มีค่าเริ่มต้น
-	numbers = append(numbers, 400)
-	numbers = append(numbers, 500)
-	fmt.Println(numbers)
-	fmt.Println(numbers[1:])       // คือเอาตั้งแต่ตำแหน่งที่ 1 ของ Array ถึง สุดท้าย 1-4
-	fmt.Println("EE", numbers[:3]) // คือเอาตั้งแต่ตำแหน่งที่ 0 - 3
+	// แบบรวดรัด
+	// country := map[string]string{"TH": "Thailand", "JP": "Japan"}
+
+	// แบบไม่รวดรัด
+	country := map[string]string{}
+	country["TH"] = "ไทย"
+	country["JP"] = "ญี่ปุ่น"
+
+	value, check := country["JP"]
+
+	if check {
+		fmt.Println(value)
+	} else {
+		fmt.Print("ไม่พบข้อมูล")
+	}
+	// fmt.Println(country["JP"])
 }
