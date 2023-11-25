@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 // นิยามตัวแปร
 // func main() {
 // 	name := "Avirut Chaisongkram"
@@ -209,29 +205,62 @@ import (
 // 	fmt.Println("จบโปรแกรม")
 // }
 
+// func main() {
+// 	// number := []int{10, 20, 30, 40, 50, 60, 70, 80, 90, 100}
+// 	// for i := 0; i < len(number); i++ {
+// 	// 	fmt.Println("Index = ", i, "Value = ", number[i])
+// 	// }
+
+// 	// for index, value := range number {
+// 	// 	fmt.Println("Index = ", index, "Value = ", value)
+// 	// }
+
+// 	//กรณีไม่เอา index
+// 	// for _, value := range number {
+// 	// 	fmt.Println("Value = ", value)
+// 	// }
+
+// 	language := map[string]string{"TH": "Thailand", "EN": "English","JP":"Japanese"}
+// 	// for key, value := range language {
+// 	// 	fmt.Println("Key = ", key, "Value = ", value)
+// 	// }
+
+// 	//กรณีไม่เอา Key ให้ใส่ _
+// 	for _, value := range language {
+// 		fmt.Println("Value = ", value)
+// 	}
+// }
+
+//ฟังก์ชัน
+
+// func main() {
+// 	showMessage("Golf")
+// }
+
+// func showMessage(name string) {
+// 	fmt.Println("Hello", name)
+// }
+
+// func main() {
+// 	total(10, 20)
+// 	dev := getdelivery()
+// 	fmt.Println("ค่าจัดส่ง =", dev)
+// }
+
+// func total(count1 int, count2 int) {
+// 	fmt.Println("ยอดรวม =", count1+count2)
+// }
+
+// func getdelivery() int {
+// 	return 50
+// }
+
 func main() {
-	// number := []int{10, 20, 30, 40, 50, 60, 70, 80, 90, 100}
-	// for i := 0; i < len(number); i++ {
-	// 	fmt.Println("Index = ", i, "Value = ", number[i])
-	// }
+	mycart := gettotalcart(20, 30)
+	println("ยอดรวมทั้งหมด =", mycart)
+}
 
-	// for index, value := range number {
-	// 	fmt.Println("Index = ", index, "Value = ", value)
-	// }
-
-	//กรณีไม่เอา index
-	// for _, value := range number {
-	// 	fmt.Println("Value = ", value)
-	// }
-
-	language := map[string]string{"TH": "Thailand", "EN": "English","JP":"Japanese"}
-	// for key, value := range language {
-	// 	fmt.Println("Key = ", key, "Value = ", value)
-	// }
-
-	//กรณีไม่เอา Key ให้ใส่ _
-	for _, value := range language {
-		fmt.Println("Value = ", value)
-	}
-
+func gettotalcart(number1, number2 int) int {
+	total := number1 + number2
+	return total
 }
